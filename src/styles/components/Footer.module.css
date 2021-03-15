@@ -1,0 +1,30 @@
+.footerContainer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    align-items: center;
+    justify-content: space-around;
+  
+    height: 10rem;
+}
+
+.footerContainer div {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    max-width: 30rem;
+    justify-content: space-around;
+
+    margin-top: 2rem;
+}
+  
+.footerContainer a img {
+    width: 2rem;
+}
+
+.footerContainer span {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}

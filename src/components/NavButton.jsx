@@ -1,21 +1,25 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { GlobalContext } from '../contexts/GlobalInfo';
 import styles from '../styles/components/NavButton.module.css';
 
 export default function NavButton() {
     let [isNavButtonActive, setIsNavButtonActive]  = useState(false);
+    const { navBarState, setNavBarState } = useContext(GlobalContext)
 
-    function setButtonStyle() {
-        if (isNavButtonActive === true) {
-            setIsNavButtonActive(false);
+    function menuButtonFunc() {
+        if (navBarState === true) {
+            setNavBarState(false);
+            setIsNavButtonActive(false)
         } else {
-            setIsNavButtonActive(true);
+            setNavBarState(true);
+            setIsNavButtonActive(true)
         }
     }
 
     return (
         <button 
         className={isNavButtonActive ? styles.navButtonActive : styles.navButton}
-        onClick={setButtonStyle}
+        onClick={menuButtonFunc}
         >
             <div></div>
             <div></div>

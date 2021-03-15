@@ -1,16 +1,129 @@
 .inactive {
-    display: none;
+    background: rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 20rem;
+    position: fixed;
+
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    font-size: 1.1rem;
+    font-weight: 100;
+
+    z-index: 5;
+
+    animation-duration: .5s;
+    animation-name: slideout;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideout {
+    from {
+        left: 0rem;
+        opacity: 1;
+    }
+
+    to {
+        left: -28rem;
+        opacity: 0;
+    }
+}
+
+.inactive header {
+    background:rgba(0, 0, 0, 1);
+    color: white;
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inactive header img {
+    width: 7rem;
+}
+
+.inactive nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inactive nav button {
+    background: rgba(0, 0, 0, .2);
+    color: white;
+    height: 3.4rem;
+    width: 100%;
+    margin-top: .2rem;
+    
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.inactive nav div {
+    background: rgba(0, 0, 0, .2);
+    color: white;
+    height: 3.4rem;
+    width: 100%;
+    margin-top: .2rem;
+}
+
+.inactive footer {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inactive footer a img {
+    width: 1.6rem;
+}
+
+.inactive footer a {
+    padding: .8rem;
 }
 
 .navBarContainer {
     background: rgba(0, 0, 0, .4);
-    height: 100vh;
+    height: 100%;
+    width: 20rem;
+    position: fixed;
+
+    left: 0;
 
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(3px);
-    font-size: 1.5rem;
+    backdrop-filter: blur(10px);
+    font-size: 1.1rem;
     font-weight: 100;
+
+    animation-duration: .5s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+
+    z-index: 5;
+}
+
+@keyframes slidein {
+    from {
+        left: -28rem;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
 }
 
 .navBarContainer header {
@@ -24,8 +137,8 @@
     justify-content: center;
 }
 
-.navBarContainer header span {
-    font-size: 2.3rem;
+.navBarContainer header img {
+    width: 7rem;
 }
 
 .navBarContainer nav {
@@ -38,7 +151,7 @@
 .navBarContainer nav button {
     background: rgba(0, 0, 0, .2);
     color: white;
-    height: 4rem;
+    height: 3.4rem;
     width: 100%;
     margin-top: .2rem;
     
@@ -46,14 +159,21 @@
     justify-content: center;
 
     border: none;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 100;
+
+    transition: .4s;
+    cursor: pointer;
+}
+
+.navBarContainer nav button:hover {
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .navBarContainer nav div {
     background: rgba(0, 0, 0, .2);
     color: white;
-    height: 4rem;
+    height: 3.4rem;
     width: 100%;
     margin-top: .2rem;
 }
@@ -62,7 +182,23 @@
     margin-top: 5%;
     display: flex;
     flex-direction: row;
+
+    min-height: 5rem;
     
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.navBarContainer footer a img {
+    width: 1.6rem;
+}
+
+.navBarContainer footer a {
+    padding: .8rem;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.navBarContainer footer a:hover {
+    background: rgba(255, 255, 255, .2);
 }
