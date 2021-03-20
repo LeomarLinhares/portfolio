@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   .container main {
     max-width: 900px;
   }

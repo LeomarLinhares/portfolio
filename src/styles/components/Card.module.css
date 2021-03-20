@@ -49,4 +49,26 @@
     border: none;
     cursor: pointer;
     border-radius: 6px;
+
+    transition: .5s;
+}
+
+.moreLink {
+    display: none;
+    background-color: #003b6f;
+    border-radius: 8px;
+
+    font-family: 'Roboto', sans-serif;
+
+    color: white;
+
+    align-self: center;
+    padding: 1rem;
+    margin-bottom: .5rem;
+
+    transition: .5s;
+}
+
+:is(.moreLink, .contactType input[type=submit]):hover {
+    background-color: #004b7f;
 }

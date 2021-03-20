@@ -1,42 +1,82 @@
-.jobCard a {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    
-
-    border-radius: 1rem;
-
-    background: #2c2c2c;
-    width: 100%;
-}
-
-.jobCard a:hover {
-    background-color: #292929;
-}
-
-.jobCard a div {
+.jobCard {
     display: flex;
     flex-direction: column;
-    margin-left: .5rem;
+    max-height: 25rem;
+
+    background: #2e2e2e;
+    padding: 1rem;
+    margin: 2rem 0;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1.5rem;
+
+    transition: .4s;
 }
 
-.jobCard div p {
-    margin-top: 1rem;
+.jobCard:hover {
+    background: #363636;
+}
+
+.jobCard img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+
+    margin-top: 1.3rem;
+
+    background: black;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+.jobCard div {
+    text-align: center;
+}
+
+.jobCard div h2 {
+    font-size: 1.2rem;
 }
 
 .jobCard div small {
-    color: #ff3030;
+    color: #ff4444;
 }
 
-.jobCard a img {
-    width: 22%;
-    max-width: 110px;
-    height: 22%;
-    max-height: 110px;
-    background: black;
-    border-radius: 50%;
+.jobCard div div {
+    margin-top: 1rem;
+    height: 10rem;
+    overflow: auto;
+}
 
-    margin-top: 1.5rem;
+@media (min-width: 770px) {
+    .jobCard {
+        flex-direction: row;
+        align-items: baseline;
 
-    box-shadow: 5px 5px 14px rgba(0, 0, 0, .5);
+        max-height: none;
+    }
+
+    .jobCard img {
+        width: 9rem;
+        height: 9rem;
+
+        margin-left: 1rem;
+
+    }
+
+    .jobCard div {
+        text-align: center;
+    }
+
+    .jobCard div div {
+        text-align: justify;
+        height: fit-content;
+        overflow: auto;
+    }
+
+    .jobCard div h2 {
+        text-align: center;
+        font-size: 1.7rem;
+    }
 }

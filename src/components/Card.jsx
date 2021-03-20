@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import styles from '../styles/components/Card.module.css';
 
 export default function Card(props) {
 
     if (props.type == 'descriptiveCard') {
         return (
-            <div className={styles.card}>
+            <div className={styles.card} id='sobre'>
                 <span>{`.${props.title} {`}</span>
                 <div>
                     {props.children}
@@ -16,7 +17,7 @@ export default function Card(props) {
 
     } else if (props.type == 'contactCard') {
         return (
-            <div className={`${styles.card} ${styles.contactType}`}>
+            <div className={`${styles.card} ${styles.contactType}`} id='contato'>
                 <span>{`.${props.title} {`}</span>
                 <div>
                 <form action="mailto:leomarlinhares@gmail.com" method="GET">
@@ -34,11 +35,14 @@ export default function Card(props) {
         
     } else if (props.type == 'jobsCard') {
         return (
-            <div className={`${styles.card} ${styles.jobsType}`}>
+            <div className={`${styles.card} ${styles.jobsType}`} id='trabalhos'>
                 <span>{`.${props.title} {`}</span>
                 <div>
                     {props.children}
                 </div>
+                <Link href="#">
+                    <a className={styles.moreLink}>Ver mais projetos</a>
+                </Link>
                 <span>{'}'}</span>
             </div>
         );

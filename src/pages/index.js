@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { render } from 'react-dom'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
 import JobCard from '../components/JobCard'
@@ -47,6 +46,7 @@ export default function Home() {
                 url='https://leomarlinhares-moveit.vercel.app/'
                 image='rocketseat.jpg'
                 title='Move.it (NLW#4)'
+                isViewAvailable={true}
               >
                 <p>Projeto criado durante a quarta Next Level Week junto da Rocketseat.</p>
                 <p>A aplicação consiste em um timer pensado para a saúde do profissional que trabalha no computador, como os desenvolvedores. O timer comta com uma gamificação com desafios e uma barra de experiência para progressão de níveis.</p>
@@ -57,8 +57,8 @@ export default function Home() {
                 url='https://github.com/LeomarLinhares/Happy--NextLevelWeek-'
                 image='rocketseat.jpg'
                 title='Happy (NLW#3)'
+                isViewAvailable={false}
               >
-                <small>Não possuí visualização!</small>
                 <p>Projeto criado durante a terceira Next Level Week junto da Rocketseat.</p>
                 <p>A aplicação é um mapa de orfanatos que aponta a localização dos mesmos e torna possível cadastrar novos orfanatos.</p>
                 <p>Nessa NLW eu aprendia na trilha Discovery e foi utilizado Handlebars no projeto.</p>
@@ -68,8 +68,8 @@ export default function Home() {
                 url='https://github.com/LeomarLinhares/Proffy--NextLevelWeek-'
                 image='rocketseat.jpg'
                 title='Proffy (NLW#2)'
+                isViewAvailable={false}
               >
-                <small>Não possuí visualização!</small>
                 <p>Primeira Next Level Week que participei.</p>
                 <p>A aplicação é uma plataforma de cadastro de professores que conta com uma Landing Page e formulário. Além disso os alunos podem entrar em contato com os professores via WhatsApp com a API de automatização de mensagem.</p>
               </JobCard>
@@ -78,6 +78,7 @@ export default function Home() {
                 url="https://leomarlinhares.github.io/Calicojack/"
                 image='mrqi.png'
                 title='CalicoJack (de Stardew Valley)'
+                isViewAvailable={true}
               >
                 <p>Réplica do jogo CalicoJack, variação do clássico jogo de cartas Blackjack presente em Stardew Valley.</p>
                 <p>O jogo é feito sem nenhum framework, é uma SPA feita de JavaScript puro. Eu pretendo futuramente criar o mesmo jogo utilizando ReactJS, provavelmente com a biblioteca Next.js.</p>
@@ -87,6 +88,7 @@ export default function Home() {
                 url='https://leomarlinhares.github.io/Miranda-s-calendar/'
                 image='miranda.jpg'
                 title='Calendário de Miranda'
+                isViewAvailable={true}
               >
                 <p>Foi criado para resolver um problema pessoal de um outro projeto pessoal.</p>
                 <p>Mostra que dia é em Miranda em relação a Terra. Miranda é um outro mundo de uma história fictícia e esse projeto foi uma das formas de treinar JavaScript.</p>
@@ -100,6 +102,8 @@ export default function Home() {
               title='contato'
               name='contato'
             />
+
+
           </div>
         </main>
         <Footer />

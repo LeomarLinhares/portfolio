@@ -53,19 +53,23 @@
     justify-content: center;
 }
 
-.inactive nav button {
+.inactive nav a {
     background: rgba(0, 0, 0, .2);
+    font-family: 'Roboto', sans-serif;
     color: white;
-    height: 3.4rem;
     width: 100%;
     margin-top: .2rem;
-    
-    align-items: center;
-    justify-content: center;
+
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 2px 2px 6px black;
 
     border: none;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 400;
+
+    transition: .4s;
+    cursor: pointer;
 }
 
 .inactive nav div {
@@ -148,25 +152,26 @@
     justify-content: center;
 }
 
-.navBarContainer nav button {
+.navBarContainer nav a {
     background: rgba(0, 0, 0, .2);
+    font-family: 'Roboto', sans-serif;
     color: white;
-    height: 3.4rem;
     width: 100%;
     margin-top: .2rem;
-    
-    align-items: center;
-    justify-content: center;
+
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 2px 2px 6px black;
 
     border: none;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 400;
 
     transition: .4s;
     cursor: pointer;
 }
 
-.navBarContainer nav button:hover {
+.navBarContainer nav a:hover {
     background-color: rgba(255, 255, 255, .2);
 }
 
