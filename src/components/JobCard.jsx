@@ -3,8 +3,8 @@ import styles from '../styles/components/JobCard.module.css';
 export default function JobCard(props) {
     return (
         <div className={styles.jobCard}>
-            <a href={`${props.url}`}>
-                <img src={`icons/pages/${props.image}`} alt={`${props.title}`} target="_blank" />
+            <a href={`${props.url}`} target="_blank">
+                <img src={`icons/pages/${props.image}`} alt={`${props.title}`}/>
             <div>
                 <h2>{props.title}</h2>
                 <hr/>
