@@ -14,7 +14,6 @@
 }
 
 .card div {
-    width: 95%;
     min-height: 10rem;
     justify-self: center;
     align-self: center;
@@ -50,22 +49,4 @@
     border: none;
     cursor: pointer;
     border-radius: 6px;
-}
-
-
-.jobsType div {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow: auto;
-    max-height: 15rem;
-
-    justify-content: center;
-}
-
-.jobsType div div {
-    width: 10px;
-    height: 10px;
-
-    background: red;
 }

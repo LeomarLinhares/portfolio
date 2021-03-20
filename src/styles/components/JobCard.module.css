@@ -1,0 +1,42 @@
+.jobCard a {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    
+
+    border-radius: 1rem;
+
+    background: #2c2c2c;
+    width: 100%;
+}
+
+.jobCard a:hover {
+    background-color: #292929;
+}
+
+.jobCard a div {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+}
+
+.jobCard div p {
+    margin-top: 1rem;
+}
+
+.jobCard div small {
+    color: #ff3030;
+}
+
+.jobCard a img {
+    width: 22%;
+    max-width: 110px;
+    height: 22%;
+    max-height: 110px;
+    background: black;
+    border-radius: 50%;
+
+    margin-top: 1.5rem;
+
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, .5);
+}

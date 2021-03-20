@@ -5,7 +5,6 @@ import styles from '../styles/components/NavBar.module.css'
 export default function NavBar() {
     const { navBarState } = useContext(GlobalContext);
 
-
     return (
         <div 
         className={navBarState ? styles.navBarContainer : styles.inactive }
@@ -15,7 +14,7 @@ export default function NavBar() {
             </header>
             <nav>
                 <div></div>
-                <button>Sobre</button>
+                <button href='#sobre'>Sobre</button>
                 <button>Trabalhos</button>
                 <button>Contato</button>
                 <div></div>
